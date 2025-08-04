@@ -1,0 +1,25 @@
+{
+  "brandName": "P&A Graphics",
+  "title": "Packaging",
+  "company": {
+    "name": "P&A Graphics",
+    "url": "https://www.thepackageiseverything.com/",
+    "socialLink": {
+      "linkedin": "https://www.linkedin.com/in/paul-preston-8236bb31/",
+      "instagram": "#",
+      "facebook": "#",
+      "mail": "mailto:paul@thepackageiseverything.com",
+      "youtube": "#",
+      "github": "#",
+      "dribble": "#",
+      "discord": "#",
+      "support": "#"
+    }
+  },
+  "logo": {
+    "main": "",
+    "logoIcon": "",
+    "logoFab": "",
+    "logoWatermark": ""
+  }
+}
