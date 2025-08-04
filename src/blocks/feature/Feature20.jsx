@@ -125,8 +125,10 @@ export default function Feature20({ heading, caption, image, features, actionBtn
                     }}
                   >
                     <Stack sx={{ gap: { xs: 3, sm: 4 }, height: 1, py: { xs: 1.5, sm: 3, md: 4 }, px: { xs: 0, sm: 3, md: 4 } }}>
-                      <Avatar sx={{ width: 60, height: 60, bgcolor: 'grey.300' }}>
-                        <SvgIcon {...(typeof item.icon === 'string' ? { name: item.icon } : { ...item.icon })} />
+                      <Avatar sx={{ width: 60, height: 60, bgcolor: '#006548' }}>
+                        <SvgIcon
+                          {...(typeof item.icon === 'string' ? { name: item.icon, color: '#D1EA8E', size: '44' } : { ...item.icon })}
+                        />
                       </Avatar>
                       <Stack sx={{ gap: { xs: 0.5, md: 1 } }}>
                         {item.title && <Typography variant="h4">{item.title}</Typography>}
@@ -175,12 +177,7 @@ export default function Feature20({ heading, caption, image, features, actionBtn
               )}
               {actionBtn && (
                 <ButtonAnimationWrapper>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    startIcon={<SvgIcon name="tabler-sparkles" size={16} stroke={3} color="background.default" />}
-                    {...actionBtn}
-                  />
+                  <Button variant="contained" color="primary" {...actionBtn} />
                 </ButtonAnimationWrapper>
               )}
             </Stack>

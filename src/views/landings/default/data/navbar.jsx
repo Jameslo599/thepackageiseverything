@@ -19,6 +19,6 @@ export const navbar = {
     { id: 'home', title: 'Home', link: '/' },
     solutionsMegamenu,
     pagesMegamenu,
-    { id: 'docs', title: 'Docs', link: DOCS_URL, ...linkProps, icon: 'tabler-pin-invoke' }
+    { id: 'sustainability', title: 'Sustainability', link: '#' }
   ]
 };

@@ -72,40 +72,41 @@ export const feature5 = {
 };
 
 export const feature20 = {
-  heading: 'Comprehensive UI Kit Tailored to your Need',
-  caption: 'Ready to transform your SaaS designs with one powerful UI Kit?',
-  actionBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
-  secondaryBtn: { children: 'Explore Blocks', href: '#' },
+  heading: 'We Love Our Planet',
+  caption:
+    'As one of the earliest adopters of renewable materials, we know how to use the right materials for the right job. We love paperboard, but we also work with many other matierials here at P&A Graphics.',
+  actionBtn: { children: 'Contact Us', href: BUY_NOW_URL, ...linkProps },
+  secondaryBtn: { children: 'Explore Services', href: '#' },
   features: [
     {
-      icon: 'tabler-accessible',
-      title: 'WCAG Compliant',
-      content: 'Ensure accessibility with WCAG compliant design for browsing.'
+      icon: 'tabler-recycle',
+      title: 'Recyclable Materials',
+      content: 'Designed for a circular economy — easy to recycle and reuse.'
     },
     {
-      icon: 'tabler-brand-google',
-      title: 'SEO Friendly',
-      content: 'Boost visibility with SEO-friendly features for better search rankings.'
+      icon: 'tabler-hourglass',
+      title: 'Biodegradable Components',
+      content: 'Returns to nature — zero waste packaging.'
     },
     {
-      icon: 'tabler-stack-2',
-      title: 'MUI Components',
-      content: 'Customize Material 3 design MUI components for enhanced aesthetics.'
+      icon: 'tabler-filled-feather',
+      title: 'Lightweighting',
+      content: 'Smarter, lighter packaging — same strength with less footprint.'
     },
     {
-      icon: 'tabler-rocket',
-      title: 'High Performance UI',
-      content: 'Adjust content layout for visual coherence on various screen sizes.'
+      icon: 'tabler-leaf',
+      title: 'Plant-Based Materials',
+      content: 'From nature, for nature — renewable packaging solutions.'
     },
     {
-      icon: 'tabler-help',
-      title: 'Detailed Documentation',
-      content: 'Access comprehensive documentation for easy guidance on platform usage.'
+      icon: 'tabler-non-toxic',
+      title: 'Non-Toxic, Food-Safe Inks and Coatings',
+      content: 'Safe for your product, safe for the planet.'
     },
     {
       icon: 'tabler-refresh',
-      title: 'Regular Updates',
-      content: 'Receive consistent updates to keep the platform secure and up-to-date with the latest features.'
+      title: 'Sustainable Supply Chain',
+      content: 'Sustainability at every step — from raw materials to retail.'
     }
   ]
 };
@@ -266,7 +267,6 @@ export const feature18 = {
   caption: 'Manage data, users, and workflows effortlessly with intuitive, customizable admin controls and features.',
   topics: [
     {
-      icon: 'tabler-sparkles',
       title: 'Material UI Powered',
       title2: 'Leverage Power of Material UI Components',
       description: 'The power and flexibility of Material UI components in admin template',

@@ -83,7 +83,7 @@ export default function Hero10({ chipTitle, headLine, captionLine, primaryBtn, s
                 <Button
                   color="primary"
                   variant="contained"
-                  endIcon={<SvgIcon name="tabler-sparkles" size={16} stroke={3} color="background.default" />}
+                  endIcon={<SvgIcon size={16} stroke={3} color="background.default" />}
                   {...primaryBtn}
                 />
               </ButtonAnimationWrapper>
