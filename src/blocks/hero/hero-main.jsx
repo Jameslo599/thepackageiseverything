@@ -185,12 +185,7 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                 }}
               >
                 <ButtonAnimationWrapper>
-                  <Button
-                    color="primary"
-                    variant="contained"
-                    startIcon={<SvgIcon name="tabler-sparkles" size={16} stroke={3} color="background.default" />}
-                    {...primaryBtn}
-                  />
+                  <Button color="primary" variant="contained" {...primaryBtn} />
                 </ButtonAnimationWrapper>
               </motion.div>
               <motion.div
@@ -203,14 +198,20 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                   ease: [0.215, 0.61, 0.355, 1]
                 }}
               >
-                <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap', justifyContent: 'center' }}>
+                <Stack direction="row" sx={{ gap: 1, flexWrap: 'wrap', justifyContent: 'center', display: { xs: 'none', sm: 'flex' } }}>
                   {listData.map((item, index) => (
                     <Chip
                       key={index}
                       label={<Typography variant="caption2">{item.title}</Typography>}
                       variant="outlined"
-                      icon={<GraphicsImage image={item.image} sx={{ width: 16, height: 16 }} />}
-                      sx={{ height: 32, px: 1, bgcolor: 'grey.100', '& .MuiChip-label': { py: 0.75, px: 1 } }}
+                      icon={<GraphicsImage image={item.image} sx={{ width: 440, height: 18 }} />}
+                      sx={{
+                        height: 32,
+                        px: 2,
+                        bgcolor: 'grey.100',
+                        '& .MuiChip-label': { py: 0.75, px: 0 },
+                        borderBlockWidth: '2px'
+                      }}
                     />
                   ))}
                 </Stack>

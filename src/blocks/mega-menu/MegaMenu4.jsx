@@ -14,7 +14,7 @@ import PreviewCard from '@/components/cards/PreviewCard';
 
 export default function MegaMenu4({ menuItems, footerData, popperWidth = 936, footerSX }) {
   return (
-    <Box sx={{ maxWidth: { xs: 1, md: popperWidth } }}>
+    <Box sx={{ maxWidth: { xs: 1, md: popperWidth, lg: 1496 } }}>
       <Grid container spacing={1} sx={{ p: 1, bgcolor: 'background.paper' }}>
         {menuItems.map((item, index) => (
           <Grid key={index} size={{ xs: 6, sm: 4, md: 3 }}>

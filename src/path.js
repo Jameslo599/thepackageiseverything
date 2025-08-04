@@ -3,10 +3,10 @@ function path(urlChunks) {
 }
 
 export const SECTION_PATH = '/sections';
-export const ADMIN_PATH = 'https://admin.saasable.io/';
-export const BUY_NOW_URL = 'https://mui.com/store/items/saasable-multipurpose-ui-kit-and-dashboard-template';
-export const FREEBIES_URL = 'https://github.com/phoenixcoded/saasable-ui';
-export const DOCS_URL = 'https://phoenixcoded.gitbook.io/saasable ';
+export const ADMIN_PATH = '#';
+export const BUY_NOW_URL = '/contact';
+export const FREEBIES_URL = '#';
+export const DOCS_URL = '#';
 const BLOCK_PATH = '/blocks';
 
 export const LANDING_PATH = {

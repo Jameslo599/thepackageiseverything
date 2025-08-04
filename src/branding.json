@@ -17,8 +17,8 @@
     }
   },
   "logo": {
-    "main": "",
-    "logoIcon": "",
+    "main": "/assets/svg/logo.svg",
+    "logoIcon": "/assets/svg/logo.svg",
     "logoFab": "",
     "logoWatermark": ""
   }

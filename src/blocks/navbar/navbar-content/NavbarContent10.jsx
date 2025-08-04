@@ -36,7 +36,6 @@ export default function NavbarContent10({ landingBaseUrl, navItems, primaryBtn, 
         {customization && <Customization />}
         {!downSM && (
           <>
-            <NavSecondaryButton {...secondaryBtn} />
             <ButtonAnimationWrapper>
               <NavPrimaryButton {...primaryBtn} />
             </ButtonAnimationWrapper>
@@ -60,7 +59,6 @@ export default function NavbarContent10({ landingBaseUrl, navItems, primaryBtn, 
                 )}
                 {downSM && (
                   <Stack direction="row" sx={{ justifyContent: 'space-between', gap: 1, px: 5, py: 2.5, mx: -5, bgcolor: 'grey.100' }}>
-                    <NavSecondaryButton {...secondaryBtn} />
                     <ButtonAnimationWrapper>
                       <NavPrimaryButton {...primaryBtn} />
                     </ButtonAnimationWrapper>

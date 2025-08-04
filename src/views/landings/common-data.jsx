@@ -14,6 +14,26 @@ const linkProps = { target: '_blank', rel: 'noopener noreferrer' };
 
 /***************************  MEGAMENU 4 - FOOTER  ***************************/
 
+function footerData() {
+  return (
+    <Stack sx={{ alignItems: 'flex-start', gap: 3, height: 1, justifyContent: 'center' }}>
+      <Stack sx={{ gap: 1 }}>
+        <Stack sx={{ alignItems: 'flex-start', gap: 1.5 }}>
+          <Chip
+            label={<Typography variant="subtitle2">Infinite possibilities</Typography>}
+            size="small"
+            sx={{ bgcolor: 'background.default', '& .MuiChip-label': { px: 1.5, py: 0.5 }, '& .MuiChip-icon': { ml: 1.25 } }}
+          />
+          <Typography variant="h5">We can take your project from an idea to the marketplace.</Typography>
+        </Stack>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          We can package anything and everything, while completely satisfying our clients, markets, people, and the planet.
+        </Typography>
+      </Stack>
+    </Stack>
+  );
+}
+
 /***************************  MEGAMENU 5 - BANNER  ***************************/
 
 function bannerData() {
@@ -22,28 +42,17 @@ function bannerData() {
       <Stack sx={{ gap: 1 }}>
         <Stack sx={{ alignItems: 'flex-start', gap: 1.5 }}>
           <Chip
-            label={<Typography variant="subtitle2">{branding.brandName} Admin Template</Typography>}
-            icon={
-              <CardMedia
-                component="img"
-                image="/assets/images/shared/celebration.svg"
-                sx={{ width: 16, height: 16 }}
-                alt="celebration"
-                loading="lazy"
-              />
-            }
+            label={<Typography variant="subtitle2">Get it right the first time</Typography>}
             size="small"
             sx={{ bgcolor: 'background.default', '& .MuiChip-label': { px: 1.5, py: 0.5 }, '& .MuiChip-icon': { ml: 1.25 } }}
           />
-          <Typography variant="h5">Stunning dashboards designed to meet your needs.</Typography>
+          <Typography variant="h5">The Right Package Makes All the Difference</Typography>
         </Stack>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-          Effortlessly manage your app’s backend with customizable admin dashboards that enhance productivity.
+          Choosing the perfect packaging solution is essential not only for your product’s success but also for creating an exceptional
+          experience for your customers. Discover how we empower you to achieve both.
         </Typography>
       </Stack>
-      <Button href={ADMIN_PATH} variant="contained" sx={{ minWidth: 92, px: { xs: 2 }, py: 1.25 }}>
-        View Dashboard
-      </Button>
     </Stack>
   );
 }
@@ -52,43 +61,73 @@ function bannerData() {
 
 export const pagesMegamenu = {
   id: 'pages',
-  title: 'Pages',
+  title: 'Markets',
+  megaMenu: {
+    type: MegaMenuType.MEGAMENU4,
+    toggleBtn: { children: 'Markets' },
+    popperWidth: { xs: 860, lg: 1160, xl: 1496 },
+    menuItems: [
+      { title: 'Beverage', image: '/assets/images/graphics/default/beverage.webp', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
+      { title: 'Food', image: '/assets/images/graphics/default/food.webp', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
+      {
+        title: 'Food Service',
+        image: '/assets/images/graphics/default/food-serv.webp',
+        link: { href: PAGE_PATH.careerPage, ...linkProps }
+      },
+      {
+        title: 'Home & Garden',
+        image: '/assets/images/graphics/default/gardening.webp',
+        link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps }
+      },
+      {
+        title: 'Personal Care',
+        image: '/assets/images/graphics/default/personal.webp',
+        link: { href: PAGE_PATH.contactPage, ...linkProps }
+      },
+      {
+        title: 'Healthcare & Pharmaceutical',
+        image: '/assets/images/graphics/default/pharma.webp',
+        link: { href: PAGE_PATH.faqPage, ...linkProps }
+      },
+      { title: 'Pet Care', image: '/assets/images/graphics/default/dog.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+      { title: 'Beauty', image: '/assets/images/graphics/default/beauty.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+      { title: 'E-Commerce', image: '/assets/images/graphics/default/ecomm.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+      { title: 'Signage', image: '/assets/images/graphics/default/sign.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+      {
+        title: 'Retail & Consumer Goods',
+        image: '/assets/images/graphics/default/commercial.webp',
+        link: { href: PAGE_PATH.pricingPage, ...linkProps }
+      },
+      {
+        title: 'Contract Manufacturing & Packaging',
+        image: '/assets/images/graphics/default/contract.webp',
+        link: { href: PAGE_PATH.pricingPage, ...linkProps }
+      }
+    ],
+    footerData: footerData()
+  }
+};
+
+/***************************  NAVBAR - MEGAMENU PAGES  ***************************/
+
+export const solutionsMegamenu = {
+  id: 'pages',
+  title: 'Solutions',
   megaMenu: {
     type: MegaMenuType.MEGAMENU5,
-    toggleBtn: { children: 'Pages' },
+    toggleBtn: { children: 'Solutions' },
     popperWidth: 860,
     menuItems: [
       {
-        title: 'General',
+        title: 'Our Services',
         itemsList: [
-          { title: 'About', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
-          { title: 'Career', link: { href: PAGE_PATH.careerPage, ...linkProps } },
-          { title: 'Privacy Policy', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
-          { title: 'Contact Us', link: { href: PAGE_PATH.contactPage, ...linkProps } },
-          { title: 'FAQs', link: { href: PAGE_PATH.faqPage, ...linkProps } },
-          { title: 'Pricing', link: { href: PAGE_PATH.pricingPage, ...linkProps } }
-        ]
-      },
-      {
-        title: 'Maintenance',
-        itemsList: [
-          { title: 'Coming Soon', link: { href: PRIVIEW_PATH.comingSoon, ...linkProps } },
-          { title: 'Error 404', link: { href: PRIVIEW_PATH.error404, ...linkProps } },
-          { title: 'Error 500', link: { href: PRIVIEW_PATH.error500, ...linkProps } },
-          { title: 'Under Maintenance', link: { href: PRIVIEW_PATH.underMaintenance, ...linkProps } }
-        ]
-      },
-      {
-        title: 'External',
-        itemsList: [
-          { title: 'Blog', link: { href: 'https://blog.saasable.io/', ...linkProps } },
-          { title: 'Documentation', link: { href: DOCS_URL, ...linkProps } },
-          { title: 'Support', link: { href: branding.company.socialLink.support, ...linkProps } },
-          {
-            title: 'Discord',
-            link: { href: branding.company.socialLink.discord, ...linkProps }
-          },
-          { title: 'Terms & Conditions', link: { href: 'https://mui.com/store/terms/', ...linkProps } }
+          { title: 'CAD & Engineering', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
+          { title: 'Die-Cutting, Folding & Gluing', link: { href: PAGE_PATH.careerPage, ...linkProps } },
+          { title: 'Color Printing', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
+          { title: 'Private Label & Custom Packaging', link: { href: PAGE_PATH.contactPage, ...linkProps } },
+          { title: 'Contract Blister Cards & Packaging', link: { href: PAGE_PATH.faqPage, ...linkProps } },
+          { title: 'Graphic Design', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+          { title: 'Fulfillment', link: { href: PAGE_PATH.pricingPage, ...linkProps } }
         ]
       }
     ],

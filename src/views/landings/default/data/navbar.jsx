@@ -1,5 +1,5 @@
 // @project
-import { pagesMegamenu } from '../../common-data';
+import { pagesMegamenu, solutionsMegamenu } from '../../common-data';
 import SvgIcon from '@/components/SvgIcon';
 import { ADMIN_PATH, BUY_NOW_URL, DOCS_URL, FREEBIES_URL } from '@/path';
 
@@ -14,10 +14,10 @@ export const navbar = {
     ...linkProps,
     sx: { minWidth: 40, width: 40, height: 40, p: 0 }
   },
-  primaryBtn: { children: 'Buy Now', href: BUY_NOW_URL, ...linkProps },
+  primaryBtn: { children: 'Contact Us', href: BUY_NOW_URL, ...linkProps },
   navItems: [
     { id: 'home', title: 'Home', link: '/' },
-    { id: 'dashboard', title: 'Dashboard', link: ADMIN_PATH, ...linkProps },
+    solutionsMegamenu,
     pagesMegamenu,
     { id: 'docs', title: 'Docs', link: DOCS_URL, ...linkProps, icon: 'tabler-pin-invoke' }
   ]

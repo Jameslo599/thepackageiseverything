@@ -23,7 +23,16 @@ export default function MegaMenu5({ menuItems, bannerData, popperWidth = 750 }) 
     <Grid container>
       {bannerData && (
         <Grid sx={{ p: 1 }} size={{ xs: 12, sm: 4 }}>
-          <Box sx={{ p: 2.5, bgcolor: 'grey.100', height: 1, borderRadius: 2 }}>{bannerData}</Box>
+          <Box
+            sx={{
+              p: 2.5,
+              bgcolor: 'grey.100',
+              height: 1,
+              borderRadius: 2
+            }}
+          >
+            {bannerData}
+          </Box>
         </Grid>
       )}
       <Grid size={{ xs: 12, sm: bannerData ? 8 : 12 }}>
