@@ -99,7 +99,7 @@ export const pagesMegamenu = {
         link: { href: PAGE_PATH.pricingPage, ...linkProps }
       },
       {
-        title: 'Contract Manufacturing & Packaging',
+        title: 'Contract Manufacturing',
         image: '/assets/images/graphics/default/contract.webp',
         link: { href: PAGE_PATH.pricingPage, ...linkProps }
       }

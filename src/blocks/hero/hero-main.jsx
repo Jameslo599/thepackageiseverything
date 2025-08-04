@@ -115,7 +115,7 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                   ease: [0.215, 0.61, 0.355, 1]
                 }}
               >
-                <Chip
+                {/* <Chip
                   variant="outlined"
                   label={
                     typeof chip.label === 'string' ? (
@@ -127,7 +127,7 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                     )
                   }
                   sx={{ bgcolor: 'grey.100', '& .MuiChip-label': { py: 0.5, px: 1.5 } }}
-                />
+                /> */}
               </motion.div>
 
               <motion.div
