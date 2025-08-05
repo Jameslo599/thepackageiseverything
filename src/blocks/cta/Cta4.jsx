@@ -61,7 +61,7 @@ export default function Cta4({ headLine, primaryBtn, profileGroups, list, client
               bgcolor: alpha(theme.palette.primary.overlay, 0.7),
               transition: 'background-color 0.3s ease',
               '&:hover': {
-                background: alpha(theme.palette.primary.overlay, 0.35)
+                bgcolor: alpha(theme.palette.primary.overlay, 0.35)
               }
             }}
           >
