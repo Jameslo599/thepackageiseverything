@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 export const cta4 = {
-  headLine: 'Why Trust Phoenixcoded for Your Dashboard Template Needs?',
+  headLine: "Why We're the Best for any Project.",
   primaryBtn: {
     children: 'Read Our story',
     href: 'https://blog.saasable.io/a-decade-of-expertise-the-phoenixcoded-story-and-why-you-should-trust-us',
@@ -22,15 +22,15 @@ export const cta4 = {
       { avatar: '/assets/images/user/avatar4.png' },
       { avatar: '/assets/images/user/avatar5.png' }
     ],
-    review: '250+ Author Reviews (4.65 out of 5)'
+    review: '250+ Client Reviews (5 out of 5)'
   },
   list: [
-    { primary: '10+ Years Expertise' },
-    { primary: '8k+ Satisfied Customers' },
-    { primary: 'Elite Envato Author' },
-    { primary: 'Timely Support, Guaranteed' },
-    { primary: 'Regular Updates Provided' },
-    { primary: 'Proven Industry Leader' }
+    { primary: '25+ Years Packaging Excellence' },
+    { primary: '5k+ Satisfied Customers' },
+    { primary: 'Global Reach, Local support' },
+    { primary: 'Scalable Production Capabilities' },
+    { primary: 'Cutting-Edge Printing Technology' },
+    { primary: '100% Custom Packaging Solutions' }
   ],
   clientContent: 'Learn More'
 };

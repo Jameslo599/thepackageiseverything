@@ -185,7 +185,12 @@ export default function Hero17({ chip, headLine, captionLine, primaryBtn, videoS
                 }}
               >
                 <ButtonAnimationWrapper>
-                  <Button color="primary" variant="contained" {...primaryBtn} />
+                  <Button
+                    color="primary"
+                    variant="contained"
+                    startIcon={<SvgIcon name="tabler-package" size={16} stroke={3} color="background.default" />}
+                    {...primaryBtn}
+                  />
                 </ButtonAnimationWrapper>
               </motion.div>
               <motion.div

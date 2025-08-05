@@ -5,49 +5,79 @@ const imagePrefix = '/assets/images/presentation';
 import branding from '@/branding.json';
 
 export const other = {
-  heading: `${branding.brandName} Blocks `,
-  description: 'Explore a wide range of ready-made blocks—from Hero to CTA, Features, and more to speed up your design process.',
-  primaryBtn: { children: 'Explore all Blocks', href: '#' },
+  heading: `${branding.brandName} in Every Industry`,
+  description: 'From Mom and Pop stores to Fortune 500 companies, we create value in any industry.',
+  primaryBtn: { children: 'Explore all Markets', href: '#' },
   sections: [
     {
       animationDelay: 0.2,
-      title: 'Hero',
-      subTitle: '17 Different Variants',
+      title: 'Beverage',
       image: { light: `${imagePrefix}/hero-light.svg`, dark: `${imagePrefix}/hero-dark.svg` },
       link: '#'
     },
     {
       animationDelay: 0.3,
-      title: 'Call to Action',
-      subTitle: '12 Different Variants',
+      title: 'Food',
       image: { light: `${imagePrefix}/cta-light.svg`, dark: `${imagePrefix}/cta-dark.svg` },
       link: '#'
     },
     {
       animationDelay: 0.4,
-      title: 'Features',
-      subTitle: '23 Different Variants',
+      title: 'Food Service',
       image: { light: `${imagePrefix}/feature-light.svg`, dark: `${imagePrefix}/feature-dark.svg` },
       link: '#'
     },
     {
       animationDelay: 0.2,
-      title: 'Benefits',
-      subTitle: '9 Different Variants',
+      title: 'Home & Garden',
       image: { light: `${imagePrefix}/benefits-light.svg`, dark: `${imagePrefix}/benefits-dark.svg` },
       link: '#'
     },
     {
       animationDelay: 0.3,
-      title: 'Process',
-      subTitle: '7 Different Variants',
+      title: 'Personal Care',
       image: { light: `${imagePrefix}/process-light.svg`, dark: `${imagePrefix}/process-dark.svg` },
       link: '#'
     },
     {
       animationDelay: 0.4,
-      title: 'Integration',
-      subTitle: '8 Different Variants',
+      title: 'Healthcare & Pharmaceutical',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'Pet Care',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'Beauty',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'E-Commerce',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'Signage',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'Retail & Consumer Goods',
+      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      link: '#'
+    },
+    {
+      animationDelay: 0.4,
+      title: 'Contract Manufacturing',
       image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
       link: '#'
     }

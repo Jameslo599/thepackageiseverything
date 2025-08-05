@@ -89,7 +89,7 @@ export const feature20 = {
       content: 'Returns to nature — zero waste packaging.'
     },
     {
-      icon: 'tabler-filled-feather',
+      icon: 'tabler-feather',
       title: 'Lightweighting',
       content: 'Smarter, lighter packaging — same strength with less footprint.'
     },
@@ -99,7 +99,7 @@ export const feature20 = {
       content: 'From nature, for nature — renewable packaging solutions.'
     },
     {
-      icon: 'tabler-non-toxic',
+      icon: 'tabler-biohazard-off',
       title: 'Non-Toxic, Food-Safe Inks and Coatings',
       content: 'Safe for your product, safe for the planet.'
     },
