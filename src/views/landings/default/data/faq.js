@@ -3,101 +3,55 @@ import branding from '@/branding.json';
 
 export const faq = {
   heading: 'Frequently Asked Questions',
-  caption: `Answers to common queries about ${branding.brandName}.`,
+  caption: `Answers to common questions about ${branding.brandName}.`,
   defaultExpanded: 'Fees & Charges',
   faqList: [
     {
-      question: `Is ${branding.brandName} only for SaaS web apps?`,
-      answer: `While ${branding.brandName} is designed with SaaS applications in mind, it’s not limited to SaaS products. ${branding.brandName} is multipurpose and can be used for a variety of websites and applications, whether it’s for an agency, digital product, CRM, blog, AI platform, or any other system. ${branding.brandName} is versatile and adaptable to fit any use case, SaaS or not. It’s built for all types of projects!`,
+      question: `What range of products does ${branding.brandName} offer?`,
+      answer: `We provide everything you need to keep your business running — from everyday essentials like pencils, copy paper, and office furniture to shipping boxes and custom retail displays.
+      Each product has unique packaging needs. That might mean a simple stock box with bubble wrap, or a fully customized solution like a fabricated polyethylene foam insert or foam-in-place protection. For retail-ready items, it could be as straightforward as a stock box with branded tissue paper. Whatever the requirement, we’ve got you covered from end to end.`,
       category: 'General'
     },
     {
-      question: `What makes ${branding.brandName} different from other UI Kits?`,
-      answer: `${branding.brandName} offers industry-specific templates, a React Material UI Kit, Figma UI Kit, and flexible customization options that cater to both front-end marketing and admin interfaces.`,
-      category: 'General'
-    },
-    {
-      question: `Is ${branding.brandName} suitable for both developers and designers?`,
-      answer: {
-        content: `Yes, ${branding.brandName} is built for both, with a Figma UI kit for designers and React code for developers.`,
-        type: 'list',
-        data: [
-          { primary: 'Figma UI Kit for Designers.' },
-          { primary: 'React Material UI Code for Developers.' },
-          { primary: 'Seamless Collaboration.' }
-        ]
-      },
-      category: 'General'
-    },
-    {
-      question: `What is the difference between the Figma and codebase versions?`,
-      answer:
-        'The Figma version is for design and prototyping, while the codebase version provides ready-to-use React components for development.',
-      category: 'General'
-    },
-    {
-      question: 'How can I download the template after purchase?',
-      answer: 'You will receive the template in a .zip format immediately after successfully purchasing the template.',
-      category: 'General'
-    },
-    {
-      question: `What's included in the ${branding.brandName} license?`,
-      answer: {
-        content: 'It includes the Figma UI kit, React Material UI codebase, regular updates, and customer support.',
-        type: 'list',
-        data: [
-          { primary: `One License = One End Product` },
-          { primary: `Separate License for Each Product` },
-          { primary: `Comply with License Terms` }
-        ]
-      },
-      category: 'Pricing & Licenses'
-    },
-    {
-      question: `Can I use ${branding.brandName} for multiple projects?`,
-      answer: {
-        content:
-          'No, one license allows usage in a single end product. For each new product or project, you are required to purchase a separate license. This ensures compliance with the licensing terms and provides ongoing support for each individual product. Make sure to obtain the appropriate license for every new project you work on.',
-        type: 'list',
-        data: [
-          { primary: `One License = One End Product` },
-          { primary: `Separate License for Each Product` },
-          { primary: `Comply with License Terms` }
-        ]
-      },
-      category: 'Pricing & Licenses'
-    },
+      question: `Does ${branding.brandName} make their own boxes?`,
+      answer: `We’re often asked whether we manufacture our own boxes — and the answer is no. But that’s actually a big advantage for our customers.
 
+      Because we’re not tied to a single production facility, we work with a wide network of trusted suppliers. That gives us the flexibility to source the best possible packaging solution for each specific application — at the right price, with the right lead time, and tailored to your unique needs. Our priority isn’t selling you our box — it’s finding your best-fit box.`,
+      category: 'General'
+    },
     {
-      question: 'Do you offer refunds?',
+      question: `Is going through ${branding.brandName} more expensive than from the supplier?`,
+      answer: `Our high-volume partnerships with suppliers allow us to secure discounted rates, helping us offer competitive prices directly in the marketplace.`,
+      category: 'General'
+    },
+    {
+      question: `
+    What is your typical turn-around time?`,
       answer:
-        'Yes, we offer refunds, but only if you provide a valid reason to support your claim. For more details, please review our MUI Store Refund Policy.',
-      category: 'Pricing'
+        'Turnaround time for stock items is typically two days. If you need it sooner, we offer will-call pickup from our warehouse, and courier delivery may also be available. For custom items, lead time is usually a couple of weeks after specifications and pricing have been confirmed.',
+      category: 'General'
     },
     {
-      question: 'Do I get access to future updates?',
-      answer: {
-        content:
-          'Yes, you will receive future updates for 1 year from the date of purchase. If you need updates after 1 year, you will need to purchase the license again. However, this is not a renewal—your license is valid for a lifetime, but updates are limited to the 1-year period.',
-        type: 'list',
-        data: [{ primary: `1 Year Free Updates` }, { primary: `License validity is lifetime` }]
-      },
+      question: `Will ${branding.brandName} ship your order to you?`,
+      answer: 'Yes',
       category: 'Support & Updates'
     },
     {
-      question: 'Is support included with the template purchase?',
-      answer: {
-        content:
-          'Support is included for 6 months, but it is limited to resolving issues within the template itself. We do not provide support for installation, customization queries, or troubleshooting unrelated issues. For ongoing support beyond 6 months, you will need to extend the support period with an additional purchase.',
-        type: 'list',
-        data: [{ primary: `6 Months Support` }, { primary: `No Installation Support` }, { primary: `No Customization Support` }]
-      },
-      category: 'Support & Updates'
+      question: `How does ${branding.brandName} handle custom orders?`,
+      answer:
+        'If a customer has a prototype, it’s incredibly helpful for us to evaluate how the product needs to be packed. We look at who the end user is, how the item will ship, and whether there are any special requirements or certifications we need to meet. For sensitive products, we may recommend custom foam inserts, while others might only need roll foam or bubble wrap. We’ll also consider quantity—whether a standard stock box will do for a small run, or if a custom box is necessary for larger or more specific needs. From there, we determine the ideal design and materials, then provide a sample and pricing for the customer’s review.',
+      category: 'Orders'
+    },
+    {
+      question: `Can I set-up recurring orders?`,
+      answer:
+        "Many of our customers rely on a consistent list of everyday packaging essentials — shipping boxes, poly bags, tape, bubble wrap, packing peanuts — all the standard supplies you'd expect to find in a warehouse. In fact, several of our customers place the same recurring order each week, making the process seamless and predictable.",
+      category: 'Orders'
     }
   ],
   getInTouch: {
-    link: { children: 'Get in Touch', href: branding.company.socialLink.support, target: '_blank', rel: 'noopener noreferrer' }
+    link: { children: 'Get in Touch', href: '/contact', target: '_blank', rel: 'noopener noreferrer' }
   },
-  categories: ['General', 'Pricing & Licenses', 'Support & Updates'],
+  categories: ['General', 'Orders', 'Support & Updates'],
   activeCategory: 'General'
 };

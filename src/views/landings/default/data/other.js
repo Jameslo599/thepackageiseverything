@@ -6,7 +6,7 @@ import branding from '@/branding.json';
 
 export const other = {
   heading: `${branding.brandName} in Every Industry`,
-  description: 'From Mom and Pop stores to Fortune 500 companies, we create value in any industry.',
+  description: 'From Mom and Pop stores to Fortune 500 companies, we create value for anyone, anywhere.',
   primaryBtn: { children: 'Explore all Markets', href: '#' },
   sections: [
     {

@@ -1,67 +1,39 @@
+import branding from '@/branding.json';
+
 export const testimonial = {
-  heading: 'See What Our Customers Are Saying',
-  caption: `Trusted by thousands of users worldwide, hear how Phoenixcoded helps bring their projects to life.`,
+  heading: 'Our Clients Love Us',
+  caption: `Trusted by thousands of people worldwide, hear how ${branding.brandName} helps bring their projects to life.`,
   testimonials: [
     {
-      title: 'Customer Support',
       ratings: 5,
       review:
-        'Very organized code base. Love the ability reuse components for many different use cases. Customer service is very active and willing to take suggestions for new features!',
+        'Excellent industry knowledge. Wonderful customer service by Paul and his staff. Highly recommended for big orders. Will always be using them.',
       profile: { avatar: '/assets/images/mui-reviews/matt-s.png', name: 'Matt S.', role: '' }
     },
     {
-      title: 'Customizability',
       ratings: 5,
-      review: `We integrated SaaSable into our project and are extremely pleased with the results. The code quality is excellent, and the architecture is thoughtfully designed. The components are not only visually appealing but also flexible and easily customizable, allowing us to save significant development time. This enabled us to focus fully on essential aspects of our project. Moreover, the support is exceptional-always quick, helpful, and responsive. Highly recommended for any professional project!`,
+      review: `Called in as a small business. Although, Paul mostly deals with large suppliers, he still took the time to offer me some advice and options. Appreciated that a lot!`,
       profile: { avatar: '', name: 'Dmitri H.', role: '' }
     },
     {
-      title: 'Design Quality',
       ratings: 5,
-      review: `I am thoroughly impressed with the customer support, code quality, modularity, and quality of the web components. This has been a tremendous support, saving us months of time designing and architecting the project, and significantly enhancing our development efficiency. Truly a valuable resource for anyone looking to build robust solutions.`,
-      profile: { avatar: '', name: 'Puneet P.', role: '' }
+      review: `Quality. Handled our packing and displays for a Fortune 500 company rollout and not only did they hit every deadline, they delivered EARLY. We received renderings, perfect mockups for photos, and we continue to use Packaging Source for all local goods. Strongly recommend.`,
+      profile: { avatar: '', name: 'Robert P.', role: '' }
     },
     {
-      title: 'Code Quality',
       ratings: 5,
-      review: `This template is awesome! It's super easy to get started, uses Material UI perfectly, and the folder structure is a breeze to navigate. Plus, it's really affordable. The coding style is top-notch too, making everything clear and easy to grasp. Surprisingly, I haven't even needed the documentation to set it up. Big shoutout to the team behind this gem. Can't wait to see what else they come up with! Definitely recommend giving it a try!`,
-      profile: { avatar: '', name: 'Piyu.', role: '' }
+      review: `We handle very large shipments and needed a large supply of packaging. One of the best experiences we've ever had. Paul walked us through every step and design idea. Prices are the best we've seen and we searched a lot as we are just medium size company. Highly recommend.`,
+      profile: { avatar: '', name: 'Mark A.', role: '' }
     },
     {
-      title: 'Code Quality',
       ratings: 5,
-      review: `Beautiful product, very well structured, very clear, very easy to understand and to use. Thank you so much!.`,
-      profile: { avatar: '', name: 'Thoma.', role: '' }
+      review: `The customer service and kindness of this company has made me a future customer. I sent an email and they responded in less than 15 minutes. The promptness was refreshing, plus they wanted to know more about my needs. Paul asked all of the right questions and I couldn't believe how helpful he was! This is the kind of business that I want to do business with. I look forward to working with them in the future.`,
+      profile: { avatar: '', name: 'Elijah A.', role: '' }
     },
     {
-      title: 'Customer Support!',
       ratings: 5,
-      review: `The support by Phoenix team is timely and professional. Their dedication to improve their product is amazing. The code is standard and has high quality. The variety of components is pretty good but there is room for adding other customized components and features.`,
-      profile: { avatar: '', name: 'Indi.', role: '' }
-    },
-    {
-      title: 'Design is Astonishing',
-      ratings: 5,
-      review: `Code quality is amazing. Design is astonishing. very easy to customize and any developer can use it with ease.`,
-      profile: { avatar: '', name: 'Shah.', role: '' }
-    },
-    {
-      title: 'Feature Availability',
-      ratings: 5,
-      review: `For developers like me, this is the total package!`,
-      profile: { avatar: '', name: 'Suma.', role: 'Developer' }
-    },
-    {
-      title: 'Code Quality',
-      ratings: 5,
-      review: `Works as described`,
-      profile: { avatar: '', name: 'Pat4.', role: '' }
-    },
-    {
-      title: 'Customer Quality`',
-      ratings: 5,
-      review: 'The author is very nice and solved my problem immediately',
-      profile: { avatar: '', name: 'Richi.', role: '' }
+      review: `I have been a Customer for over 10 years and my experience is always excellent. I've worked with the design team, customer service, warehousing and shipping. Great people who understand the business.`,
+      profile: { avatar: '', name: 'John K.', role: '' }
     }
   ]
 };

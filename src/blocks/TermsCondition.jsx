@@ -81,7 +81,7 @@ const menuItems = [
     id: 'intellectual-property',
     heading: 'Intellectual Property',
     caption:
-      'All content on this website, including but not limited to text, graphics, logos, images, audio clips, video clips, digital downloads, and data compilations, is the property of [Your Company Name] or its content suppliers and protected by international copyright laws.'
+      'All content on this website, including but not limited to text, graphics, logos, images, audio clips, video clips, digital downloads, and data compilations, is the property of P&G Graphics or its content suppliers and protected by international copyright laws.'
   },
   {
     id: 'privacy-policy',
@@ -93,19 +93,19 @@ const menuItems = [
     id: 'user-generated-content',
     heading: 'User-Generated Content',
     caption:
-      'If you submit any material to this website, you grant [Your Company Name] a perpetual, royalty-free, worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material.'
+      'If you submit any material to this website, you grant P&G Graphics a perpetual, royalty-free, worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material.'
   },
   {
     id: 'limitation-of-liability',
     heading: 'Limitation of Liability',
     caption:
-      'In no event shall [Your Company Name] or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this website.'
+      'In no event shall P&G Graphics or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this website.'
   },
   {
     id: 'indemnity',
     heading: 'Indemnity',
     caption:
-      "You agree to indemnify and hold harmless [Your Company Name] and its affiliates from any claims, actions, demands, damages, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the website or any violation of these terms."
+      "You agree to indemnify and hold harmless P&G Graphics and its affiliates from any claims, actions, demands, damages, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the website or any violation of these terms."
   },
   {
     id: 'governing-law',

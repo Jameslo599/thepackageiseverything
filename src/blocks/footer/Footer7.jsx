@@ -36,15 +36,15 @@ const data = [
     title: 'Company',
     menu: [
       {
-        label: 'Why Phoenixcoded?',
+        label: 'What We Do',
         link: {
-          href: 'https://blog.saasable.io/a-decade-of-expertise-the-phoenixcoded-story-and-why-you-should-trust-us',
+          href: '#',
           ...linkProps
         }
       },
       {
-        label: 'About',
-        link: { href: '/about', ...linkProps }
+        label: 'About Us',
+        link: { href: '#', ...linkProps }
       },
       {
         label: 'Contact Us',
@@ -58,24 +58,12 @@ const data = [
     title: 'Support',
     menu: [
       {
-        label: 'Pricing',
-        link: { href: '/pricing', ...linkProps }
-      },
-      {
         label: 'FAQ',
         link: { href: '/faq', ...linkProps }
       },
       {
         label: 'Support',
         link: { href: branding.company.socialLink.support, ...linkProps }
-      },
-      {
-        label: 'License Terms',
-        link: { href: 'https://mui.com/store/license/', ...linkProps }
-      },
-      {
-        label: 'Discord',
-        link: { href: branding.company.socialLink.discord, ...linkProps }
       }
     ]
   },
@@ -85,24 +73,12 @@ const data = [
     title: 'Resources',
     menu: [
       {
-        label: 'Freebies',
-        link: { href: FREEBIES_URL, ...linkProps }
-      },
-      {
-        label: 'Documentation',
-        link: { href: DOCS_URL, ...linkProps }
-      },
-      {
-        label: 'Blog',
-        link: { href: 'https://blog.saasable.io/', ...linkProps }
-      },
-      {
         label: 'Privacy Policy',
         link: { href: '/privacy-policy', ...linkProps }
       },
       {
         label: 'Refund Policy',
-        link: { href: 'https://mui.com/store/customer-refund-policy/', ...linkProps }
+        link: { href: '#', ...linkProps }
       }
     ]
   }
@@ -110,21 +86,18 @@ const data = [
 
 const iconProps = { color: 'text.secondary' };
 
-const usefullLinks = [
+const usefulLinks = [
   {
-    icon: <SvgIcon name="tabler-brand-figma" {...iconProps} />,
-    title: 'Figma Version 1.1.0',
-    href: 'https://www.figma.com/community/file/1425095061180549847'
+    title: branding.brandName,
+    href: null
   },
   {
-    icon: <SvgIcon name="tabler-route" {...iconProps} />,
-    title: 'React Material UI v7',
-    href: 'https://mui.com/material-ui/getting-started'
+    title: '(972) 632-2100',
+    href: 'tel:9726322100'
   },
   {
-    icon: <SvgIcon name="tabler-sparkles" {...iconProps} />,
-    title: 'Documentation',
-    href: DOCS_URL
+    title: '2100 Couch Dr, McKinney, TX 75069',
+    href: 'https://share.google/EmvRg0sfcs43JWzPp'
   }
 ];
 
@@ -134,11 +107,10 @@ export default function Footer7() {
   const logoFollowContent = (
     <Stack sx={{ alignItems: 'flex-start', gap: { xs: 1.5, sm: 3 } }}>
       <LogoSection />
-      <Typography variant="h6" sx={{ maxWidth: { sm: 280 }, mb: { xs: -1, sm: -2.5 } }}>
-        {process.env.NEXT_PUBLIC_VERSION}
-      </Typography>
       <Typography variant="body2" sx={{ maxWidth: { sm: 280 } }}>
-        Explore the different versions of our {branding.brandName} template.
+        We’re a global leader in renewable packaging, biomaterials, and wood-based construction solutions — and one of the largest private
+        forest owners in the world. By accelerating the shift toward a circular bioeconomy, we’re helping create smarter, more sustainable
+        choices for society.
       </Typography>
     </Stack>
   );
@@ -159,18 +131,17 @@ export default function Footer7() {
             <Grid size={{ xs: 12, md: 6 }}>
               <Stack direction={{ sm: 'row', md: 'column' }} sx={{ gap: 3, justifyContent: 'space-between', height: 1 }}>
                 {logoFollowContent}
-                <Stack sx={{ gap: { xs: 2, sm: 2.5, md: 3 } }}>
-                  {usefullLinks.map((item, index) => (
-                    <Stack direction="row" sx={{ gap: 1, alignItems: 'center' }} key={index}>
+                <Stack>
+                  {usefulLinks.map((item, index) => (
+                    <Stack direction="row" sx={{ alignItems: 'center' }} key={index}>
                       {item.icon}
                       <Link
-                        component={NextLink}
                         variant="body2"
                         color="text.secondary"
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label="Usefull Links"
+                        aria-label="Useful Links"
                       >
                         {item.title}
                       </Link>

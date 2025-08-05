@@ -90,7 +90,7 @@ export const feature20 = {
     },
     {
       icon: 'tabler-feather',
-      title: 'Lightweighting',
+      title: 'Lightweight',
       content: 'Smarter, lighter packaging — same strength with less footprint.'
     },
     {
