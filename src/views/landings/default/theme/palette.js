@@ -20,7 +20,8 @@ export default function palette(mode) {
       light: '#92CCFF', // AI/primary/80 - primary fixed dim
       main: '#006397', // AI/primary/40 - primary
       dark: '#004B73', // AI/primary/30 - on primary fixed variant
-      darker: '#001D31' // AI/primary/10 - on primary container / on primary fixed
+      darker: '#001D31', // AI/primary/10 - on primary container / on primary fixed
+      overlay: '#ffffff'
     },
     secondary: {
       lighter: '#D3E4F8', // AI/secondary/90 - secondary container / secondary fixed
@@ -57,7 +58,8 @@ export default function palette(mode) {
       light: '#3398DB', // AI/primary/60 - primary fixed dim
       main: '#92CCFF', // AI/primary/80 - primary
       dark: '#CCE5FF ', // AI/primary/90 - on primary container / primary fixed
-      darker: '#E7F2FF' // AI/primary/95 - on primary container / on primary fixed
+      darker: '#E7F2FF', // AI/primary/95 - on primary container / on primary fixed
+      overlay: '#000000'
     },
     secondary: {
       lighter: '#384858', // AI/secondary/30 - secondary container / on secondary fixed variant

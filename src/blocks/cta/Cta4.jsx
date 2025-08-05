@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 // @mui
-import { useTheme } from '@mui/material/styles';
+import { useTheme, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
@@ -46,8 +46,25 @@ export default function Cta4({ headLine, primaryBtn, profileGroups, list, client
           delay: 0.3
         }}
       >
-        <GraphicsCard>
-          <Box sx={{ p: { xs: 3, sm: 4, md: 5 } }}>
+        <GraphicsCard
+          sx={{
+            bgcolor: 'red',
+            backgroundImage: 'url(/assets/images/graphics/default/lake-forest.webp)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <Box
+            sx={{
+              p: { xs: 3, sm: 4, md: 5 },
+              bgcolor: alpha(theme.palette.primary.overlay, 0.7),
+              transition: 'background-color 0.3s ease',
+              '&:hover': {
+                background: alpha(theme.palette.primary.overlay, 0.35)
+              }
+            }}
+          >
             <Grid container spacing={{ xs: 5, sm: 0, md: 3 }} sx={{ alignItems: 'flex-end' }}>
               <Grid size={{ xs: 12, sm: 9, md: 8 }}>
                 <Stack sx={{ gap: 5 }}>

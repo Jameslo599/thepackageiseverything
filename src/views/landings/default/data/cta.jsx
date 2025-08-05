@@ -7,10 +7,10 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 export const cta4 = {
-  headLine: "Why We're the Best for any Project.",
+  headLine: "Why We're the Best for Any Project.",
   primaryBtn: {
     children: 'Read Our story',
-    href: 'https://blog.saasable.io/a-decade-of-expertise-the-phoenixcoded-story-and-why-you-should-trust-us',
+    href: '#',
     target: '_blank',
     rel: 'noopener noreferrer'
   },
@@ -22,7 +22,7 @@ export const cta4 = {
       { avatar: '/assets/images/user/avatar4.png' },
       { avatar: '/assets/images/user/avatar5.png' }
     ],
-    review: '250+ Client Reviews (5 out of 5)'
+    review: '500+ Client Reviews (5 out of 5)'
   },
   list: [
     { primary: '25+ Years Packaging Excellence' },
@@ -32,7 +32,7 @@ export const cta4 = {
     { primary: 'Cutting-Edge Printing Technology' },
     { primary: '100% Custom Packaging Solutions' }
   ],
-  clientContent: 'Learn More'
+  clientContent: 'Hover Me!'
 };
 
 function DescriptionLine() {

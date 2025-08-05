@@ -36,19 +36,19 @@ const data = [
     title: 'Company',
     menu: [
       {
-        label: 'What We Do',
-        link: {
-          href: '#',
-          ...linkProps
-        }
-      },
-      {
         label: 'About Us',
         link: { href: '#', ...linkProps }
       },
       {
         label: 'Contact Us',
         link: { href: '/contact', ...linkProps }
+      },
+      {
+        label: 'Our Impact',
+        link: {
+          href: '#',
+          ...linkProps
+        }
       }
     ]
   },
@@ -77,6 +77,10 @@ const data = [
         link: { href: '/privacy-policy', ...linkProps }
       },
       {
+        label: 'Terms & Conditions',
+        link: { href: '/terms-condition', ...linkProps }
+      },
+      {
         label: 'Refund Policy',
         link: { href: '#', ...linkProps }
       }
@@ -92,8 +96,12 @@ const usefulLinks = [
     href: null
   },
   {
-    title: '(972) 632-2100',
-    href: 'tel:9726322100'
+    title: '1-800-580-5004',
+    href: 'tel:+18005805004'
+  },
+  {
+    title: 'info@thepackageiseverything.com',
+    href: 'mail:info@thepackageiseverything.com'
   },
   {
     title: '2100 Couch Dr, McKinney, TX 75069',

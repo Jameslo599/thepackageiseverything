@@ -15,7 +15,6 @@ export const faq = {
     {
       question: `Does ${branding.brandName} make their own boxes?`,
       answer: `We’re often asked whether we manufacture our own boxes — and the answer is no. But that’s actually a big advantage for our customers.
-
       Because we’re not tied to a single production facility, we work with a wide network of trusted suppliers. That gives us the flexibility to source the best possible packaging solution for each specific application — at the right price, with the right lead time, and tailored to your unique needs. Our priority isn’t selling you our box — it’s finding your best-fit box.`,
       category: 'General'
     },
@@ -28,12 +27,12 @@ export const faq = {
       question: `
     What is your typical turn-around time?`,
       answer:
-        'Turnaround time for stock items is typically two days. If you need it sooner, we offer will-call pickup from our warehouse, and courier delivery may also be available. For custom items, lead time is usually a couple of weeks after specifications and pricing have been confirmed.',
+        "Turnaround time truly depends on each client's unique situation. We encourage you to contact our support team for more information.",
       category: 'General'
     },
     {
       question: `Will ${branding.brandName} ship your order to you?`,
-      answer: 'Yes',
+      answer: 'Yes, we have a world-class shipping and logistics team that will ensure your order is delivered on-time.',
       category: 'Support & Updates'
     },
     {

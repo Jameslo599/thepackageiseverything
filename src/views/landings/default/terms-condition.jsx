@@ -1,5 +1,5 @@
 // @project
-import { SmallHero3 } from '@/blocks/small-hero';
+import { SmallHero1 } from '@/blocks/small-hero';
 import TermsConditionPage from '@/blocks/TermsCondition';
 
 // @data
@@ -10,7 +10,7 @@ import { smallHero1 } from './data';
 export default function TermsCondition() {
   return (
     <>
-      <SmallHero3 {...smallHero1} />
+      <SmallHero1 {...smallHero1} />
       <TermsConditionPage />
     </>
   );

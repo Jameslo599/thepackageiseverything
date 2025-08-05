@@ -148,6 +148,13 @@ export default function Color() {
       muiLabel: 'primary.darker',
       figmaLabel: 'On Primary Container / On Primary Fixed',
       figmaValue: `${colorString}/primary/${getColorCode(currentTheme, 4, mode)}`
+    },
+    {
+      value: theme.palette.primary.overlay,
+      color: 'primary.overlay',
+      muiLabel: 'primary.overlay',
+      figmaLabel: 'On Primary Container / On Primary Fixed',
+      figmaValue: `${colorString}/primary/${getColorCode(currentTheme, 5, mode)}`
     }
   ];
 

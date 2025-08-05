@@ -93,19 +93,19 @@ const menuItems = [
     id: 'user-generated-content',
     heading: 'User-Generated Content',
     caption:
-      'If you submit any material to this website, you grant P&G Graphics a perpetual, royalty-free, worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material.'
+      'If you submit any material to this website, you grant P&A Graphics a perpetual, royalty-free, worldwide license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such material.'
   },
   {
     id: 'limitation-of-liability',
     heading: 'Limitation of Liability',
     caption:
-      'In no event shall P&G Graphics or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this website.'
+      'In no event shall P&A Graphics or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this website.'
   },
   {
     id: 'indemnity',
     heading: 'Indemnity',
     caption:
-      "You agree to indemnify and hold harmless P&G Graphics and its affiliates from any claims, actions, demands, damages, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the website or any violation of these terms."
+      "You agree to indemnify and hold harmless P&A Graphics and its affiliates from any claims, actions, demands, damages, liabilities, costs, or expenses, including reasonable attorneys' fees, arising out of or related to your use of the website or any violation of these terms."
   },
   {
     id: 'governing-law',

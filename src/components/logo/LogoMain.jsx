@@ -24,7 +24,7 @@ export default function LogoMain() {
     />
   ) : (
     <Box sx={{ width: { xs: 112, lg: 140 }, height: { xs: 22, lg: 26 } }}>
-      <span className="word-logo">P&G Graphics</span>
+      <span className="word-logo">P&A Graphics</span>
     </Box>
   );
 }

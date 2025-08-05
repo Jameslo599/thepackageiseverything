@@ -8,7 +8,7 @@ export const smallHero = {
 };
 
 export const smallHero1 = {
-  captionLine: `This Privacy Policy describes how ${branding.brandName} we collects, uses, and shares information about you when you use our website or services.`,
+  captionLine: `The Terms & Conditions describes how ${branding.brandName} we collects, uses, and shares information about you when you use our website or services.`,
   headLine: 'Terms and Condition',
   exploreBtn: { children: 'Contact Us', href: '/contact' }
 };
