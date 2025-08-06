@@ -22,8 +22,8 @@ export const PAGE_PATH = {
   underMaintenance: path([MARKET_PATH, 'under-maintenance']),
 
   // pages path
-  aboutPage: '/about',
-  careerPage: '/career',
+  // aboutPage: '/about',
+  // careerPage: '/career',
   contactPage: '/contact',
   faqPage: '/faq',
   privacyPolicyPage: '/privacy-policy',
