@@ -89,7 +89,6 @@ export default function ContactUsForm2() {
           Accept: 'application/json'
         },
         body: JSON.stringify({
-          dialcode: formValues.dialcode,
           email: formValues.email,
           firstName: formValues.firstName,
           lastName: formValues.lastName,
