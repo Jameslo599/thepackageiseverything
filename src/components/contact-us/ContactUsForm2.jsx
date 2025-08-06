@@ -81,26 +81,27 @@ export default function ContactUsForm2() {
 
   // Handle form submission
   const onSubmit = async (formValues) => {
-    fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      },
-      body: JSON.stringify({
-        email: formValues.email,
-        firstName: formValues.firstName,
-        lastName: formValues.lastName,
-        message: formValues.message,
-        phone: formValues.phone
-      })
-    })
-      .then((response) => {
-        response.json();
-        reset();
-      })
-      .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+    try {
+      const response = await fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          email: formValues.email,
+          firstName: formValues.firstName,
+          lastName: formValues.lastName,
+          message: formValues.message,
+          phone: formValues.phone
+        })
+      });
+      const data = await response;
+      if (data.ok) console.log('Successfully submitted form!');
+      reset();
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
