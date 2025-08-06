@@ -82,6 +82,7 @@ export default function ContactUsForm2() {
   // Handle form submission
   const onSubmit = async (e) => {
     const form = new FormData();
+    console.log(e);
 
     try {
       const response = await fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
@@ -152,6 +153,7 @@ export default function ContactUsForm2() {
                 rules={phoneSchema}
                 render={({ field: { onChange } }) => (
                   <OutlinedInput
+                    {...register('phoneNumber', phoneSchema)}
                     placeholder="Phone number"
                     slotProps={{ input: { 'aria-label': 'Phone number' } }}
                     fullWidth
