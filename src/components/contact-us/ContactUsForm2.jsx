@@ -82,7 +82,9 @@ export default function ContactUsForm2() {
   // Handle form submission
   const onSubmit = async (e) => {
     const form = new FormData();
-    console.log(e);
+    Object.entries(formValues).forEach(([key, value]) => {
+      form.append(key, value);
+    });
 
     try {
       const response = await fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
