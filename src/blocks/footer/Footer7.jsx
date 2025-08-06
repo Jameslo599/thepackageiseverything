@@ -79,10 +79,6 @@ const data = [
       {
         label: 'Terms & Conditions',
         link: { href: '/terms-condition', ...linkProps }
-      },
-      {
-        label: 'Refund Policy',
-        link: { href: '#', ...linkProps }
       }
     ]
   }
@@ -116,9 +112,8 @@ export default function Footer7() {
     <Stack sx={{ alignItems: 'flex-start', gap: { xs: 1.5, sm: 3 } }}>
       <LogoSection />
       <Typography variant="body2" sx={{ maxWidth: { sm: 280 } }}>
-        We’re a global leader in renewable packaging, biomaterials, and wood-based construction solutions — and one of the largest private
-        forest owners in the world. By accelerating the shift toward a circular bioeconomy, we’re helping create smarter, more sustainable
-        choices for society.
+        We’re a global leader in renewable packaging, biomaterials, and wood-based construction solutions. By accelerating the shift toward
+        a circular bioeconomy, we’re helping create smarter, more sustainable choices for society.
       </Typography>
     </Stack>
   );

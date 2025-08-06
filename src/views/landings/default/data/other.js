@@ -12,73 +12,73 @@ export const other = {
     {
       animationDelay: 0.2,
       title: 'Beverage',
-      image: { light: `${imagePrefix}/hero-light.svg`, dark: `${imagePrefix}/hero-dark.svg` },
+      image: { light: `${imagePrefix}/beverage2.webp`, dark: `${imagePrefix}/beverage2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.3,
       title: 'Food',
-      image: { light: `${imagePrefix}/cta-light.svg`, dark: `${imagePrefix}/cta-dark.svg` },
+      image: { light: `${imagePrefix}/food2.webp`, dark: `${imagePrefix}/food2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Food Service',
-      image: { light: `${imagePrefix}/feature-light.svg`, dark: `${imagePrefix}/feature-dark.svg` },
+      image: { light: `${imagePrefix}/food-service2.webp`, dark: `${imagePrefix}/food-service2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.2,
       title: 'Home & Garden',
-      image: { light: `${imagePrefix}/benefits-light.svg`, dark: `${imagePrefix}/benefits-dark.svg` },
+      image: { light: `${imagePrefix}/garden2.webp`, dark: `${imagePrefix}/garden2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.3,
       title: 'Personal Care',
-      image: { light: `${imagePrefix}/process-light.svg`, dark: `${imagePrefix}/process-dark.svg` },
+      image: { light: `${imagePrefix}/personal2.webp`, dark: `${imagePrefix}/personal2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Healthcare & Pharmaceutical',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/health2.webp`, dark: `${imagePrefix}/health2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Pet Care',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/pet2.webp`, dark: `${imagePrefix}/pet2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Beauty',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/beauty2.webp`, dark: `${imagePrefix}/beauty2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'E-Commerce',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/ecomm2.webp`, dark: `${imagePrefix}/ecomm2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Signage',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/sign2.webp`, dark: `${imagePrefix}/sign2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Retail & Consumer Goods',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/retail2.webp`, dark: `${imagePrefix}/retail2.webp` },
       link: '#'
     },
     {
       animationDelay: 0.4,
       title: 'Contract Manufacturing',
-      image: { light: `${imagePrefix}/integration-light.svg`, dark: `${imagePrefix}/integration-dark.svg` },
+      image: { light: `${imagePrefix}/manu2.webp`, dark: `${imagePrefix}/manu2.webp` },
       link: '#'
     }
   ]

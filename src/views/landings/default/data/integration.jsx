@@ -5,7 +5,7 @@ import { DOCS_URL } from '@/path';
 export const integration = {
   headLine: 'The Complete Package',
   captionLine:
-    "We've spent thousands of hours research and procuring the best technology and team to provide every service you can imagine. We are truly a one-stop shop.",
+    "We've spent thousands of hours researching and procuring the best technology and team to provide every service you can imagine. We are truly a one-stop shop.",
   primaryBtn: {
     children: 'Learn More',
     startIcon: <SvgIcon name="tabler-package" color="background.default" />,

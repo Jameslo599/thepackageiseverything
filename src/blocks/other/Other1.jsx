@@ -31,6 +31,7 @@ import GetImagePath from '@/utils/GetImagePath';
 // @assets
 import Background from '@/images/graphics/Background';
 import Wave from '@/images/graphics/Wave';
+import { size } from 'lodash-es';
 
 /***************************  OTHER - 1  ***************************/
 
@@ -57,13 +58,12 @@ export default function Other1({ heading, description, primaryBtn, sections }) {
             <Grid key={index} size={{ xs: 6, sm: 4, md: 4 }}>
               <GraphicsCard sx={{ overflow: 'hidden' }}>
                 <motion.div
-                  whileHover={{ scale: 1.02 }}
+                  whileHover={{ scale: 1.05 }}
                   initial={{ opacity: 0, y: 25 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{
-                    duration: 0.5,
-                    delay: item.animationDelay
+                    duration: 0.25
                   }}
                 >
                   <GraphicsCard
@@ -89,7 +89,9 @@ export default function Other1({ heading, description, primaryBtn, sections }) {
                           px: '14.5%',
                           pt: '16%',
                           pb: { xs: 2, md: 1 },
-                          objectFit: 'contain'
+                          objectFit: 'cover',
+                          height: { xs: 170, sm: 200, md: 250 },
+                          width: '100%'
                         }}
                         alt="other sections"
                         loading="lazy"
@@ -107,7 +109,9 @@ export default function Other1({ heading, description, primaryBtn, sections }) {
                         justifyContent: 'end',
                         textAlign: 'center',
                         gap: { xs: 0.25, md: 0.5, sm: 1 },
-                        p: 3,
+                        py: 3,
+                        pb: { lg: 5 },
+                        textWrap: 'pretty',
                         background: `linear-gradient(180deg, ${alpha(theme.palette.grey[100], 0)} 0%, ${theme.palette.grey[100]} 100%)`
                       }}
                     >

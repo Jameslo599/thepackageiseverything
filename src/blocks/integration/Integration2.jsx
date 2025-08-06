@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 
 // @mui
+import { useTheme, alpha } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
@@ -45,8 +46,18 @@ function IntegrationTag({ label, icon }) {
 /***************************  INTEGRATION - 2  ***************************/
 
 export default function Integration2({ headLine, captionLine, primaryBtn, tagList }) {
+  const theme = useTheme();
+
   return (
-    <ContainerWrapper sx={{ py: SECTION_COMMON_PY }}>
+    <ContainerWrapper
+      sx={{
+        py: SECTION_COMMON_PY,
+        backgroundImage: 'url(/assets/images/graphics/default/complete-package.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +67,16 @@ export default function Integration2({ headLine, captionLine, primaryBtn, tagLis
           delay: 0.4
         }}
       >
-        <GraphicsCard>
+        <GraphicsCard
+          sx={{
+            p: { xs: 3, sm: 4, md: 5 },
+            bgcolor: alpha(theme.palette.primary.overlay || '#ffffff', 0.8),
+            transition: 'background-color 0.3s ease',
+            '&:hover': {
+              bgcolor: alpha(theme.palette.primary.overlay || '#000000', 0.35)
+            }
+          }}
+        >
           <Stack sx={{ alignItems: 'center', p: { xs: 3, sm: 4, md: 5 } }}>
             <Stack sx={{ alignItems: 'center', gap: { xs: 1, sm: 1.5 } }}>
               {headLine && (

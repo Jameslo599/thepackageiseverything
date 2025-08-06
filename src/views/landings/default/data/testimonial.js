@@ -12,7 +12,7 @@ export const testimonial = {
     },
     {
       ratings: 5,
-      review: `Called in as a small business. Although, Paul mostly deals with large suppliers, he still took the time to offer me some advice and options. Appreciated that a lot!`,
+      review: `Called in as a small business. Although Paul mostly deals with large suppliers, he still took the time to offer me some advice and options. Appreciated that a lot!`,
       profile: { avatar: '', name: 'Dmitri H.', role: '' }
     },
     {

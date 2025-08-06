@@ -50,7 +50,7 @@ export default function SmallHero1({ chip, headLine, captionLine }) {
             )}
             {headLine}
             {captionLine && (
-              <Typography variant="h6" align="center" sx={{ color: 'text.secondary', width: { xs: 320, sm: 350, md: 500 } }}>
+              <Typography variant="h6" align="center" sx={{ color: 'text.secondary', width: { xs: 280, sm: 350, md: 500 } }}>
                 {captionLine}
               </Typography>
             )}

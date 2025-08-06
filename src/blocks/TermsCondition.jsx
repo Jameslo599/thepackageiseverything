@@ -111,7 +111,7 @@ const menuItems = [
     id: 'governing-law',
     heading: 'Governing Law',
     caption:
-      'These terms are governed by and construed in accordance with the laws of Texas, The United States of America, without regard to its conflict of law principles.'
+      'These terms are governed by and construed in accordance with the laws of the state of Texas in The United States of America, without regard to its conflict of law principles.'
   }
 ];
 

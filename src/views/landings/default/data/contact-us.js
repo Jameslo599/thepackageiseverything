@@ -3,25 +3,26 @@ import branding from '@/branding.json';
 
 export const contactUS = {
   heading: 'We’d love to hear from you',
-  caption: 'Explore key statistics and trends shaping our understanding of the current landscape.',
+  caption:
+    'Your vision could spark the next innovation. Whether it’s a problem you want to solve or a product you believe in—let’s make it happen.',
   list: [
     {
       icon: 'tabler-phone',
-      title: 'Contact Sale',
-      content: 'Speak to someone from our sales team.',
+      title: 'Contact Sales',
+      content: 'Speak to someone from our sales team',
       link: { children: 'Contact Sales', href: branding.company.socialLink.support, target: '_blank', rel: 'noopener noreferrer' }
     },
     {
       icon: 'tabler-help-circle',
-      title: 'Have a Question',
-      content: 'See our frequently asked question',
+      title: 'Have a Question?',
+      content: 'See our frequently asked questions',
       link: { children: 'Get Answers', href: '/faq' }
     },
     {
       icon: 'tabler-folder-check',
       title: 'Press & Media',
-      content: 'Get in touch with our PR team',
-      link: { children: 'Press Contact', href: '/contact' }
+      content: 'Connect with us on social media',
+      link: { children: 'Connect With Us', href: branding.company.socialLink.linkedin, target: '_blank', rel: 'noopener noreferrer' }
     }
   ]
 };

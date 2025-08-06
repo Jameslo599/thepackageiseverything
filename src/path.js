@@ -3,6 +3,7 @@ function path(urlChunks) {
 }
 
 export const SECTION_PATH = '/sections';
+export const MARKET_PATH = '/sections/markets';
 export const ADMIN_PATH = '#';
 export const BUY_NOW_URL = '/contact';
 export const FREEBIES_URL = '#';
@@ -18,14 +19,13 @@ export const PAGE_PATH = {
   comingSoon: path([SECTION_PATH, 'coming-soon']),
   error404: path([SECTION_PATH, 'error404']),
   error500: path([SECTION_PATH, 'error500']),
-  underMaintenance: path([SECTION_PATH, 'under-maintenance']),
+  underMaintenance: path([MARKET_PATH, 'under-maintenance']),
 
   // pages path
   aboutPage: '/about',
   careerPage: '/career',
   contactPage: '/contact',
   faqPage: '/faq',
-  pricingPage: '/pricing',
   privacyPolicyPage: '/privacy-policy',
   termsConditionPage: '/terms-condition'
 };

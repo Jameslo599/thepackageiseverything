@@ -48,7 +48,6 @@ export default function Cta4({ headLine, primaryBtn, profileGroups, list, client
       >
         <GraphicsCard
           sx={{
-            bgcolor: 'red',
             backgroundImage: 'url(/assets/images/graphics/default/lake-forest.webp)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -58,10 +57,10 @@ export default function Cta4({ headLine, primaryBtn, profileGroups, list, client
           <Box
             sx={{
               p: { xs: 3, sm: 4, md: 5 },
-              bgcolor: alpha(theme.palette.primary.overlay, 0.7),
+              bgcolor: alpha(theme.palette.primary.overlay || '#ffffff', 0.7),
               transition: 'background-color 0.3s ease',
               '&:hover': {
-                bgcolor: alpha(theme.palette.primary.overlay, 0.35)
+                bgcolor: alpha(theme.palette.primary.overlay || '#000000', 0.35)
               }
             }}
           >

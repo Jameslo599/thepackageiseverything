@@ -12,7 +12,7 @@ export default function Rating({ count = 5, rate, starSize = 20, ...rest }) {
   return (
     <Stack direction="row" {...rest} sx={{ gap: 0.75, ...(rest.sx && { ...rest.sx }) }}>
       {Array.from({ length: count }, (_, index) => {
-        const color = rate && index > rate - 1 ? 'primary.lighter' : 'primary.main';
+        const color = rate && index > rate - 1 ? '#FAC000' : '#FAC000';
         return <SvgIcon name="tabler-filled-star" size={starSize} key={index} type={IconType.FILL} color={color} />;
       })}
     </Stack>

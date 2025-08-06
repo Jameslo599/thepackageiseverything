@@ -67,41 +67,49 @@ export const pagesMegamenu = {
     toggleBtn: { children: 'Markets' },
     popperWidth: { xs: 860, lg: 1160, xl: 1496 },
     menuItems: [
-      { title: 'Beverage', image: '/assets/images/graphics/default/beverage.webp', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
-      { title: 'Food', image: '/assets/images/graphics/default/food.webp', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
+      {
+        title: 'Beverage',
+        image: '/assets/images/graphics/default/beverage.webp',
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
+      },
+      { title: 'Food', image: '/assets/images/graphics/default/food.webp', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
       {
         title: 'Food Service',
         image: '/assets/images/graphics/default/food-serv.webp',
-        link: { href: PAGE_PATH.careerPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       },
       {
         title: 'Home & Garden',
         image: '/assets/images/graphics/default/gardening.webp',
-        link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       },
       {
         title: 'Personal Care',
         image: '/assets/images/graphics/default/personal.webp',
-        link: { href: PAGE_PATH.contactPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       },
       {
         title: 'Healthcare & Pharmaceutical',
         image: '/assets/images/graphics/default/pharma.webp',
-        link: { href: PAGE_PATH.faqPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       },
-      { title: 'Pet Care', image: '/assets/images/graphics/default/dog.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
-      { title: 'Beauty', image: '/assets/images/graphics/default/beauty.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
-      { title: 'E-Commerce', image: '/assets/images/graphics/default/ecomm.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
-      { title: 'Signage', image: '/assets/images/graphics/default/sign.webp', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
+      { title: 'Pet Care', image: '/assets/images/graphics/default/dog.webp', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+      { title: 'Beauty', image: '/assets/images/graphics/default/beauty.webp', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+      {
+        title: 'E-Commerce',
+        image: '/assets/images/graphics/default/ecomm.webp',
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
+      },
+      { title: 'Signage', image: '/assets/images/graphics/default/sign.webp', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
       {
         title: 'Retail & Consumer Goods',
         image: '/assets/images/graphics/default/commercial.webp',
-        link: { href: PAGE_PATH.pricingPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       },
       {
         title: 'Contract Manufacturing',
         image: '/assets/images/graphics/default/contract.webp',
-        link: { href: PAGE_PATH.pricingPage, ...linkProps }
+        link: { href: PAGE_PATH.underMaintenance, ...linkProps }
       }
     ],
     footerData: footerData()
@@ -121,13 +129,13 @@ export const solutionsMegamenu = {
       {
         title: 'Our Services',
         itemsList: [
-          { title: 'CAD & Engineering', link: { href: PAGE_PATH.aboutPage, ...linkProps } },
-          { title: 'Die-Cutting, Folding & Gluing', link: { href: PAGE_PATH.careerPage, ...linkProps } },
-          { title: 'Color Printing', link: { href: PAGE_PATH.privacyPolicyPage, ...linkProps } },
-          { title: 'Private Label & Custom Packaging', link: { href: PAGE_PATH.contactPage, ...linkProps } },
-          { title: 'Contract Blister Cards & Packaging', link: { href: PAGE_PATH.faqPage, ...linkProps } },
-          { title: 'Graphic Design', link: { href: PAGE_PATH.pricingPage, ...linkProps } },
-          { title: 'Fulfillment', link: { href: PAGE_PATH.pricingPage, ...linkProps } }
+          { title: 'CAD & Engineering', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Die-Cutting, Folding & Gluing', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Color Printing', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Private Label & Custom Packaging', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Contract Blister Cards & Packaging', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Graphic Design', link: { href: PAGE_PATH.underMaintenance, ...linkProps } },
+          { title: 'Fulfillment', link: { href: PAGE_PATH.underMaintenance, ...linkProps } }
         ]
       }
     ],

@@ -8,8 +8,8 @@ export const smallHero = {
 };
 
 export const smallHero1 = {
-  captionLine: `The Terms & Conditions describes how ${branding.brandName} we collects, uses, and shares information about you when you use our website or services.`,
-  headLine: 'Terms and Condition',
+  captionLine: `The Terms & Conditions describes how ${branding.brandName} collects, uses, and shares information about you when you use our website or services.`,
+  // headLine: 'Terms and Conditions',
   exploreBtn: { children: 'Contact Us', href: '/contact' }
 };
 

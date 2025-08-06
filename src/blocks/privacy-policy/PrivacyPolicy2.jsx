@@ -10,48 +10,53 @@ import { SECTION_COMMON_PY } from '@/utils/constant';
 
 const policyItems = [
   {
-    heading: '1. Information We Collect Personal Data',
+    heading: '1. Information We Collect',
     caption:
-      'Includes name, email, address, phone number, and payment information. Usage Data: Information about your visit, such as IP address, browser type, and pages viewed. Cookies: We use cookies to enhance your experience and analyze service performance.'
+      'Personal Data: We may collect personally identifiable information, including your name, email address, mailing address, phone number, and payment details. Usage Data: This includes technical data such as your IP address, browser type, operating system, referring URLs, pages visited, and the dates and times of your visits. Cookies: We use cookies and similar tracking technologies to enhance your experience, remember preferences, and analyze service performance. You can adjust your browser settings to refuse cookies if you prefer.'
   },
   {
     heading: '2. How We Use Your Information',
-    caption: 'Provide and maintain the Service Process transactions Improve our Service Comply with legal obligations'
+    caption:
+      'We may use your personal information to: Provide, operate, and maintain our services, process orders and transactions, improve and personalize user experience, communicate with you about updates, offers, and support, fulfill our legal and regulatory obligations.'
   },
   {
     heading: '3. Sharing Your Information',
-    caption: 'Service Providers: Trusted third parties assisting us. Legal Compliance: To comply with laws or protect our rights.'
+    caption:
+      'We do not sell your personal data. However, we may share your information with: Service Providers: Trusted third parties who assist us with payment processing, website hosting, analytics, and customer support. Legal Compliance: We may disclose your data if required to do so by law or in response to valid legal requests (e.g., court orders or subpoenas) or to protect our legal rights.'
   },
   {
     heading: '4. Data Security',
-    caption: 'We implement reasonable measures to protect your data, but no method of transmission is completely secure.'
+    caption:
+      'We take reasonable administrative, technical, and physical measures to protect your information. However, no method of transmission or storage is 100% secure. You share information at your own risk.'
   },
   {
     heading: '5. Your Rights',
     caption:
-      'You have rights including access, rectification, deletion, and objection to the processing of your personal data. To exercise these rights, contact us at info@saasable.com.'
+      'You have rights under applicable privacy laws, which may include: Accessing your personal data, correcting inaccurate or incomplete data, requesting deletion of your data, objecting to or limiting data processing, to exercise these rights, contact us at paul@thepackageiseverything.com.'
   },
   {
     heading: '6. Data Retention',
-    caption: 'We retain your personal data only as long as necessary for the purposes it was collected.'
+    caption:
+      'We retain your personal data only as long as necessary to fulfill the purposes for which it was collected, including satisfying legal, accounting, or reporting requirements.'
   },
   {
     heading: '7. Third-Party Links',
-    caption: 'Our Service may contain links to other websites. We are not responsible for their privacy practices.'
+    caption:
+      'Our services may contain links to external websites. We are not responsible for the privacy practices or content of those third-party sites. We encourage you to read their privacy policies.'
   },
   {
     heading: '8. Illustration Notice',
     caption:
-      'The feature images included in this template are non-editable within Framer. They serve as static visual elements for design purposes. If you require editable images, please consider customizing your own assets externally.'
+      'The feature images in our templates are static, non-editable visuals provided solely for design purposes. If editable images are required, you must supply or create your own assets externally.'
   },
   {
     heading: '9. Refund Policy',
     caption:
-      'This is a one-time purchase, and all sales are final. Once the product is purchased, it is non-refundable. Kindly ensure that the product meets your needs before making your purchase.'
+      'All purchases are final. This product is a one-time purchase and is non-refundable. Please ensure the product meets your requirements before completing your purchase.'
   },
   {
     heading: '10. Contact Us',
-    caption: 'For questions about this Privacy Policy, contact us at: info@saasable.com'
+    caption: 'If you have questions or concerns about this Privacy Policy, please contact us at paul@thepackageiseverything.com'
   }
 ];
 
