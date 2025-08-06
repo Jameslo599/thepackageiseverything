@@ -10,7 +10,7 @@ const cspHeader = `
   form-action 'self';
   media-src 'self' https://*.cloudfront.net https://player.vimeo.com https://vod-progressive.akamaized.net;
   frame-src https://player.vimeo.com;
-  connect-src 'self' https://www.googletagmanager.com https://raw.githubusercontent.com https://phpstack-207002-5085356.cloudwaysapps.com https://*.clarity.ms https://*.azurewebsites.net;
+  connect-src 'self' https://www.googletagmanager.com https://raw.githubusercontent.com https://phpstack-207002-5085356.cloudwaysapps.com https://*.clarity.ms https://*.azurewebsites.net https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0;
 `;
 
 const nextConfig = {

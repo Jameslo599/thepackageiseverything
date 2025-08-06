@@ -80,9 +80,24 @@ export default function ContactUsForm2() {
   } = useForm({ defaultValues: { dialcode: '+1' } });
 
   // Handle form submission
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
+  const onSubmit = async (e) => {
+    const form = new FormData();
+
+    try {
+      const response = await fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
+        method: 'POST',
+        body: form
+      });
+
+      if (response.ok) {
+        console.log('Form submitted successfully');
+        reset();
+      } else {
+        console.error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
   };
 
   return (
