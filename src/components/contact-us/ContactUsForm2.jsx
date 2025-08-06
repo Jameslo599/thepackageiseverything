@@ -80,7 +80,7 @@ export default function ContactUsForm2() {
   } = useForm({ defaultValues: { dialcode: '+1' } });
 
   // Handle form submission
-  const onSubmit = async (e) => {
+  const onSubmit = async (formValues) => {
     const form = new FormData();
     Object.entries(formValues).forEach(([key, value]) => {
       form.append(key, value);
@@ -155,6 +155,7 @@ export default function ContactUsForm2() {
                 rules={phoneSchema}
                 render={({ field: { onChange } }) => (
                   <OutlinedInput
+                    type="tel"
                     {...register('phoneNumber', phoneSchema)}
                     placeholder="Phone number"
                     slotProps={{ input: { 'aria-label': 'Phone number' } }}
