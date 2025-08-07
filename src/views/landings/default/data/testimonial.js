@@ -17,7 +17,7 @@ export const testimonial = {
     },
     {
       ratings: 5,
-      review: `Quality. Handled our packing and displays for a Fortune 500 company rollout and not only did they hit every deadline, they delivered EARLY. We received renderings, perfect mockups for photos, and we continue to use Packaging Source for all local goods. Strongly recommend.`,
+      review: `Quality. Handled our packing and displays for a Fortune 500 company rollout and not only did they hit every deadline, they delivered EARLY. We received renderings, perfect mockups for photos, and we continue to use P&A Graphics for all local goods. Strongly recommend.`,
       profile: { avatar: '', name: 'Robert P.', role: '' }
     },
     {
