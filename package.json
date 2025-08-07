@@ -1,10 +1,10 @@
 {
-  "name": "saas-able-react-mui-next-seed-js",
+  "name": "P&G Graphics",
   "version": "1.2.0",
   "private": true,
   "author": {
-    "email": "phoenixcoded@gmail.com",
-    "name": "phoenixcoded"
+    "email": "contact.jameshlo@gmail.com",
+    "name": "James Lo"
   },
   "scripts": {
     "dev": "next dev --turbopack",

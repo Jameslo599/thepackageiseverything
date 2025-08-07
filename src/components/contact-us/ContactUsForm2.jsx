@@ -21,6 +21,7 @@ import Popper from '@mui/material/Popper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { Snackbar, Alert } from '@mui/material';
 
 // @third-party
 import { useForm, Controller } from 'react-hook-form';
@@ -33,7 +34,6 @@ import countries from '@/data/countries';
 import { emailSchema, firstNameSchema, lastNameSchema, phoneSchema } from '@/utils/validationSchema';
 
 // @types
-
 /***************************  FORM - INPUT LABEL  ***************************/
 
 function FieldLabel({ name }) {
@@ -75,38 +75,55 @@ export default function ContactUsForm2() {
     reset,
     control,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     setValue
   } = useForm({ defaultValues: { dialcode: '+1' } });
 
+  // Snackbar
+  const [state, setState] = useState({
+    on: false,
+    vertical: 'top',
+    horizontal: 'center',
+    message: '',
+    result: ''
+  });
+  const { vertical, horizontal, on, message, result } = state;
+
+  const handleSnack = (newState) => {
+    setState({ ...state, ...newState, on: true });
+  };
+
+  const handleClose = () => {
+    setState({ ...state, on: false });
+  };
+
   // Handle form submission
   const onSubmit = async (formValues) => {
-    // try {
-    //   const response = await fetch('https://formsubmit.co/a57ee60bef4a16e866692a7cb1b838f0', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       Accept: 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //       dialcode: formValues.dialcode,
-    //       email: formValues.email,
-    //       firstName: formValues.firstName,
-    //       lastName: formValues.lastName,
-    //       message: formValues.message,
-    //       phone: formValues.phone
-    //     })
-    //   });
-    //   const data = await response;
-    //   if (data.ok) console.log('Successfully submitted form!');
-    //   reset();
-    // } catch (err) {
-    //   console.error(err);
-    // }
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formValues)
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.message);
+
+      handleSnack({ message: "Form submitted! We'll get back to you soon!", result: 'success' });
+      reset();
+    } catch (err) {
+      handleSnack({ message: 'Form submission unsuccessful. Please try again.', result: 'error' });
+    }
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
+      <Snackbar anchorOrigin={{ vertical, horizontal }} open={on} autoHideDuration={4000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity={result} variant="filled" sx={{ width: '100%', p: 1 }}>
+          {message}
+        </Alert>
+      </Snackbar>
+
       <Stack sx={{ gap: { xs: 3, sm: 4 } }}>
         <Grid container spacing={2.5} sx={{ justifyContent: 'space-between' }}>
           <Grid size={{ xs: 12, sm: 6 }}>
@@ -158,7 +175,6 @@ export default function ContactUsForm2() {
                 render={({ field: { onChange } }) => (
                   <OutlinedInput
                     type="tel"
-                    {...register('phoneNumber', phoneSchema)}
                     placeholder="Phone number"
                     slotProps={{ input: { 'aria-label': 'Phone number' } }}
                     fullWidth
@@ -265,7 +281,7 @@ export default function ContactUsForm2() {
         </Grid>
         <Box sx={{ textAlign: 'center' }}>
           <ButtonAnimationWrapper>
-            <Button type="submit" color="primary" size="large" variant="contained">
+            <Button type="submit" color="primary" size="large" variant="contained" disabled={isSubmitting}>
               Send Message
             </Button>
           </ButtonAnimationWrapper>
