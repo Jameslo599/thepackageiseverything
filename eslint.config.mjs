@@ -97,6 +97,10 @@ export default [
           trailingComma: 'none',
           tabWidth: 2,
           useTabs: false
+        },
+        'error',
+        {
+          endOfLine: 'auto'
         }
       ]
     }
